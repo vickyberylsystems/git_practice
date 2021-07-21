@@ -1,0 +1,26 @@
+# create a readme file
+
+$echo "# git_practice" >> README.md
+
+##initialize local repository..................
+$ git init
+
+## add readme file to stagging area...........
+
+$git add README.md
+
+## commit to the local repository "" make a snapshot of local file".........
+
+$ git commit -m "first commit"
+
+## create the main branch instead of default master branch"" 
+
+$ git branch -M main
+
+## connect local repo to remote repo"..............................."
+
+$ git remote add origin https://github.com/vickyberylsystems/git_practice.git
+
+## push the file to the remote repository..........................
+ 
+$git push -u origin main

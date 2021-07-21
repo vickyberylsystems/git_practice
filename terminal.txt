@@ -1,0 +1,62 @@
+beryl@beryl:~/Desktop$ mv -t vicky asdf training
+
+beryl@beryl:~/Desktop$ cd vicky
+
+beryl@beryl:~/Desktop/vicky$ mkdir git_practice
+
+beryl@beryl:~/Desktop/vicky$ cd git_practice
+
+beryl@beryl:~/Desktop/vicky/git_practice$ vim new_repo.txt
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git init
+Initialized empty Git repository in /home/beryl/Desktop/vicky/git_practice/.git/
+
+beryl@beryl:~/Desktop/vicky/git_practice$ echo "added readme file">> README.md
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git add -A
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   new_repo.txt
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git commit -m "first commit to the git_practice repo"
+[master (root-commit) 5f9d617] first commit to the git_practice repo
+ 2 files changed, 27 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 new_repo.txt
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git status
+On branch master
+nothing to commit, working tree clean
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git branch -M main
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git branch
+* main
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git remote add origin https://github.com/vickyberylsystems/git_practice.git
+
+beryl@beryl:~/Desktop/vicky/git_practice$ git push -u origin main
+
+Username for 'https://github.com': vickyberylsystems
+Password for 'https://vickyberylsystems@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 585 bytes | 585.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/vickyberylsystems/git_practice.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+beryl@beryl:~/Desktop/vicky/git_practice$ 
+

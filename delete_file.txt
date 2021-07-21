@@ -1,0 +1,49 @@
+beryl@beryl:~/Desktop/vicky/asdf$ ls
+
+branch_merge.txt  branch.txt  test1.txt  test2.txt  test.txt
+
+beryl@beryl:~/Desktop/vicky/asdf$ git rm test.txt
+rm 'test.txt'
+
+beryl@beryl:~/Desktop/vicky/asdf$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    test.txt
+
+beryl@beryl:~/Desktop/vicky/asdf$ git commit -m"test.txt file deleted"
+
+[main 8ad4854] test.txt file deleted
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 test.txt
+
+beryl@beryl:~/Desktop/vicky/asdf$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+beryl@beryl:~/Desktop/vicky/asdf$ git push origin main
+
+Username for 'https://github.com': vickyberylsystems
+Password for 'https://vickyberylsystems@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 228 bytes | 228.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vickyberylsystems/asdf.git
+   ef4ea37..8ad4854  main -> main
+
+beryl@beryl:~/Desktop/vicky/asdf$ vim delete_file.txt
+
+beryl@beryl:~/Desktop/vicky/asdf$ ls
+
+branch_merge.txt  branch.txt  delete_file.txt  test1.txt  test2.txt
+beryl@beryl:~/Desktop/vicky/asdf$ 
+
